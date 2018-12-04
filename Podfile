@@ -1,4 +1,4 @@
-platform :ios, '11.0'
+platform :ios, '10.0'
 
 def unit_test_libs
     pod 'Quick'
@@ -28,5 +28,12 @@ target 'Wallet' do
   target 'WalletTests' do
     inherit! :search_paths
     unit_test_libs
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+    end
   end
 end
