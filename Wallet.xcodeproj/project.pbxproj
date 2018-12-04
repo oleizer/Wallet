@@ -38,7 +38,9 @@
 		A6D764C121B65E3C00666FBE = {
 			isa = PBXGroup;
 			children = (
-				A6D764CC21B65E3C00666FBE /* Wallet */,
+				A6D764E021B65E5100666FBE /* Resources */,
+				A6D764DF21B65E4800666FBE /* Support */,
+				A6D764CC21B65E3C00666FBE /* Sources */,
 				A6D764CB21B65E3C00666FBE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +53,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6D764CC21B65E3C00666FBE /* Wallet */ = {
+		A6D764CC21B65E3C00666FBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				A6D764CD21B65E3C00666FBE /* AppDelegate.swift */,
 				A6D764CF21B65E3C00666FBE /* ViewController.swift */,
-				A6D764D121B65E3C00666FBE /* Main.storyboard */,
-				A6D764D421B65E3D00666FBE /* Assets.xcassets */,
-				A6D764D621B65E3D00666FBE /* LaunchScreen.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A6D764DF21B65E4800666FBE /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				A6D764D921B65E3D00666FBE /* Info.plist */,
 			);
-			path = Wallet;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A6D764E021B65E5100666FBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6D764E121B65E5A00666FBE /* Storyboards */,
+				A6D764D421B65E3D00666FBE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A6D764E121B65E5A00666FBE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A6D764D121B65E3C00666FBE /* Main.storyboard */,
+				A6D764D621B65E3D00666FBE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +308,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
-				INFOPLIST_FILE = Wallet/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.Wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +327,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
-				INFOPLIST_FILE = Wallet/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.Wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
