@@ -1,0 +1,23 @@
+language: objective-c
+xcode_sdk: iphonesimulator11.1
+xcode_workspace: Wallet.xcworkspace
+xcode_scheme: Wallet
+git:
+  depth: 1
+cache:
+- bundler
+- cocoapods
+before_install:
+- export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 8 (11.4" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
+- echo $IOS_SIMULATOR_UDID
+install:
+- gem install bundler
+- bundle install
+- bundle exec pod repo update --silent
+- bundle exec pod install
+before_script:
+- export LANG=en_US.UTF-8
+script:
+- xcodebuild -workspace Wallet.xcworkspace -scheme Wallet -sdk iphonesimulator11.1 -configuration Debug -destination "id=$IOS_SIMULATOR_UDID" build test | xcpretty -f `xcpretty-travis-formatter`
+notifications:
+  email: false

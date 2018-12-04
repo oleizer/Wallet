@@ -1,0 +1,81 @@
+disabled_rules: # rule identifiers to exclude from running
+
+  # RUN THIS TO BEGIN THE -~*MAGIC*~-
+  # swiftlint autocorrect --config .swiftlintautocorrect.yml
+
+  # - opening_brace
+  # - colon
+  # - closing_brace
+  # - comma
+  # - empty_parameters
+  # - legacy_cggeometry_functions
+  # - legacy_constant
+  # - legacy_constructor
+  # - legacy_nsgeometry_functions
+  # - mark
+  # - trailing_newline
+  # - trailing_semicolon
+  # - trailing_whitespace
+  # - unused_closure_parameter
+  # - vertical_whitespace
+
+  # Codestyle
+  - attributes
+  - control_statement
+  - closure_spacing
+  - closure_parameter_position
+  - closure_end_indentation
+  - conditional_returns_on_newline
+  - type_name
+  - leading_whitespace
+  - empty_parentheses_with_trailing_closure
+  - operator_usage_whitespace
+  - operator_whitespace
+  - return_arrow_whitespace
+  - statement_position
+  - switch_case_on_newline
+  - trailing_comma
+  - variable_name
+
+  # Code logic
+  - cyclomatic_complexity
+  - nesting
+  - force_cast
+  - force_try
+  - force_unwrapping
+  - explicit_init
+  - function_parameter_count
+  - implicit_getter
+  - overridden_super_call
+  - private_outlet
+  - private_unit_test
+  - weak_delegate
+
+  # Length
+  - line_length
+  - file_length
+  - function_body_length
+  - type_body_length
+
+  # Other
+  - valid_docs
+  - missing_docs
+  - dynamic_inline
+  - empty_count
+  - todo
+  - nimble_operator
+  - redundant_nil_coalescing
+  - redundant_string_enum_value
+  - syntactic_sugar
+  - unused_enumerated
+  - valid_ibinspectable
+  - void_return
+
+  - custom_rules
+
+included:
+  - Sources
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+reporter: "html" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
