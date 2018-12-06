@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 def unit_test_libs
     pod 'Quick'

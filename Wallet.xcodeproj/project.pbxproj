@@ -14,6 +14,18 @@
 		A6D764D521B65E3D00666FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D764D421B65E3D00666FBE /* Assets.xcassets */; };
 		A6D764D821B65E3D00666FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D764D621B65E3D00666FBE /* LaunchScreen.storyboard */; };
 		A6D764E921B65FF100666FBE /* WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764E821B65FF100666FBE /* WalletTests.swift */; };
+		A6D764F521B66D6000666FBE /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764F421B66D6000666FBE /* SettingsBundleHelper.swift */; };
+		A6D764F821B66D8500666FBE /* BundleExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764F721B66D8500666FBE /* BundleExtenstions.swift */; };
+		A6D764FA21B66DA300666FBE /* BundleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764F921B66DA300666FBE /* BundleExtensionsTests.swift */; };
+		A6D764FC21B6724300666FBE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D764FB21B6724300666FBE /* Colors.xcassets */; };
+		A6D764FF21B6740200666FBE /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764FE21B6740200666FBE /* ConfiguratorProtocol.swift */; };
+		A6D7650121B6741000666FBE /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7650021B6741000666FBE /* AppearanceConfigurator.swift */; };
+		A6D7650321B6742600666FBE /* ThirdPartiesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7650221B6742600666FBE /* ThirdPartiesConfigurator.swift */; };
+		A6D7650521B6743800666FBE /* ApplicationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7650421B6743800666FBE /* ApplicationConfigurator.swift */; };
+		A6D7650921B6762100666FBE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6D7650821B6762100666FBE /* Settings.bundle */; };
+		A6D7650B21B6768900666FBE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6D7650A21B6768900666FBE /* Localizable.strings */; };
+		A6D7650E21B676C400666FBE /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7650D21B676C400666FBE /* Localizable.swift */; };
+		A6D7651021B6774C00666FBE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7650F21B6774C00666FBE /* Images.swift */; };
 		CAC1F4ECC4A64AAE34148D3B /* Pods_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404B7A5C9C415378AA99C0FB /* Pods_Wallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +54,18 @@
 		A6D764E621B65FF000666FBE /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D764E821B65FF100666FBE /* WalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTests.swift; sourceTree = "<group>"; };
 		A6D764EA21B65FF100666FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D764F421B66D6000666FBE /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
+		A6D764F721B66D8500666FBE /* BundleExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtenstions.swift; sourceTree = "<group>"; };
+		A6D764F921B66DA300666FBE /* BundleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensionsTests.swift; sourceTree = "<group>"; };
+		A6D764FB21B6724300666FBE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A6D764FE21B6740200666FBE /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A6D7650021B6741000666FBE /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
+		A6D7650221B6742600666FBE /* ThirdPartiesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartiesConfigurator.swift; sourceTree = "<group>"; };
+		A6D7650421B6743800666FBE /* ApplicationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfigurator.swift; sourceTree = "<group>"; };
+		A6D7650821B6762100666FBE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A6D7650A21B6768900666FBE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A6D7650D21B676C400666FBE /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		A6D7650F21B6774C00666FBE /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		AA8EE226116FC92E2FB94889 /* Pods-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletTests/Pods-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADC0F8E41AD9367D3B515B23 /* Pods-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +135,11 @@
 		A6D764CC21B65E3C00666FBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A6D764CD21B65E3C00666FBE /* AppDelegate.swift */,
+				A6D7650C21B676AF00666FBE /* Constants */,
+				A6D764F621B66D7700666FBE /* Extensions */,
+				A6D764F321B66D5800666FBE /* Helpers */,
+				A6D764F221B66D1F00666FBE /* ApplicationLayer */,
+				A6D764F121B66C5F00666FBE /* BusinessLogicLayer */,
 				A6D764CF21B65E3C00666FBE /* ViewController.swift */,
 			);
 			path = Sources;
@@ -130,6 +158,9 @@
 			children = (
 				A6D764E121B65E5A00666FBE /* Storyboards */,
 				A6D764D421B65E3D00666FBE /* Assets.xcassets */,
+				A6D764FB21B6724300666FBE /* Colors.xcassets */,
+				A6D7650821B6762100666FBE /* Settings.bundle */,
+				A6D7650A21B6768900666FBE /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -148,8 +179,61 @@
 			children = (
 				A6D764E821B65FF100666FBE /* WalletTests.swift */,
 				A6D764EA21B65FF100666FBE /* Info.plist */,
+				A6D764F921B66DA300666FBE /* BundleExtensionsTests.swift */,
 			);
 			path = WalletTests;
+			sourceTree = "<group>";
+		};
+		A6D764F121B66C5F00666FBE /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		A6D764F221B66D1F00666FBE /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A6D764FD21B673E900666FBE /* Configurators */,
+				A6D764CD21B65E3C00666FBE /* AppDelegate.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		A6D764F321B66D5800666FBE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A6D764F421B66D6000666FBE /* SettingsBundleHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A6D764F621B66D7700666FBE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6D764F721B66D8500666FBE /* BundleExtenstions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A6D764FD21B673E900666FBE /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				A6D764FE21B6740200666FBE /* ConfiguratorProtocol.swift */,
+				A6D7650021B6741000666FBE /* AppearanceConfigurator.swift */,
+				A6D7650221B6742600666FBE /* ThirdPartiesConfigurator.swift */,
+				A6D7650421B6743800666FBE /* ApplicationConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		A6D7650C21B676AF00666FBE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A6D7650D21B676C400666FBE /* Localizable.swift */,
+				A6D7650F21B6774C00666FBE /* Images.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +300,10 @@
 			};
 			buildConfigurationList = A6D764C521B65E3C00666FBE /* Build configuration list for PBXProject "Wallet" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				ru,
 				Base,
 			);
 			mainGroup = A6D764C121B65E3C00666FBE;
@@ -239,6 +323,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D764D821B65E3D00666FBE /* LaunchScreen.storyboard in Resources */,
+				A6D7650B21B6768900666FBE /* Localizable.strings in Resources */,
+				A6D764FC21B6724300666FBE /* Colors.xcassets in Resources */,
+				A6D7650921B6762100666FBE /* Settings.bundle in Resources */,
 				A6D764D521B65E3D00666FBE /* Assets.xcassets in Resources */,
 				A6D764D321B65E3C00666FBE /* Main.storyboard in Resources */,
 			);
@@ -381,8 +468,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D764FF21B6740200666FBE /* ConfiguratorProtocol.swift in Sources */,
+				A6D764F821B66D8500666FBE /* BundleExtenstions.swift in Sources */,
+				A6D7650121B6741000666FBE /* AppearanceConfigurator.swift in Sources */,
+				A6D7650321B6742600666FBE /* ThirdPartiesConfigurator.swift in Sources */,
 				A6D764D021B65E3C00666FBE /* ViewController.swift in Sources */,
+				A6D764F521B66D6000666FBE /* SettingsBundleHelper.swift in Sources */,
 				A6D764CE21B65E3C00666FBE /* AppDelegate.swift in Sources */,
+				A6D7651021B6774C00666FBE /* Images.swift in Sources */,
+				A6D7650E21B676C400666FBE /* Localizable.swift in Sources */,
+				A6D7650521B6743800666FBE /* ApplicationConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D764E921B65FF100666FBE /* WalletTests.swift in Sources */,
+				A6D764FA21B66DA300666FBE /* BundleExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,17 +642,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.Wallet;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -566,17 +664,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.Wallet;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

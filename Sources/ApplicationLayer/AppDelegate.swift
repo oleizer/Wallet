@@ -10,11 +10,28 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    class var shared: AppDelegate {
+        guard let delegate = UIApplication.shared.delegate as? AppDelegate else { fatalError("AppDelegate: Invalid delegate") }
+        return delegate
+    }
     var window: UIWindow?
+    private var configurators: [ConfiguratorProtocol] = {
+        return [AppearanceConfigurator(),
+                ApplicationConfigurator(),
+                ThirdPartiesConfigurator()
+        ]
+    }()
+
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+        runStartupSequenceWithLaunchOptions(launchOptions)
+        return true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        print("didFinishLaunchingWithOptions state: \(application.applicationState)")
+
+        configurators.forEach { $0.configure() }
+
         return true
     }
 
@@ -38,6 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    private func runStartupSequenceWithLaunchOptions(_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+
     }
 
 }
