@@ -1,0 +1,8 @@
+app_identifier("kz.idev.algatenge") # The bundle identifier of your app
+apple_id("oleizer@gmail.com") # Your Apple email address
+
+itc_team_id("1447962") # App Store Connect Team ID
+team_id("AC6F95FHB4") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

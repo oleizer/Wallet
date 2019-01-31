@@ -1,0 +1,28 @@
+warning_threshold: 10
+disabled_rules:
+  #- superfluous_disable_command
+  #- identifier_name
+  - nesting
+  - multiple_closures_with_trailing_closure
+included:
+  - Sources
+excluded:
+  - Pods
+  - Sources/ThirdParty
+# excluding tests
+
+function_body_length:
+  warning: 60
+  error: 120
+file_length:
+  warning: 500
+  error: 500
+line_length:
+  warning: 300
+  error: 300
+type_name:
+  excluded: T
+  max_length:
+    warning: 56
+function_parameter_count:
+  warning: 7 # нужно уменьшать

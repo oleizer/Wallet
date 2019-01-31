@@ -1,0 +1,19 @@
+//
+//  iOS.xcconfig
+//  Wallet
+//
+//  Created by Олег Лейзер on 31/01/2019.
+//  Copyright © 2019 Олег Лейзер. All rights reserved.
+//
+
+// Compiler
+SDKROOT = iphoneos
+IPHONEOS_DEPLOYMENT_TARGET = 11.0
+TARGETED_DEVICE_FAMILY = 1
+
+// Support files
+INFOPLIST_FILE = Support/Info.plist
+
+// Swift flags
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+

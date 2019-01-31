@@ -1,0 +1,52 @@
+default_platform(:ios)
+TEMP_BUILD_FOLDER = "#{File.dirname(Dir.pwd)}/build/"
+APP_NAME = "Wallet"
+WORKSPACE = "#{APP_NAME}.xcworkspace"
+DERIVED_DATA_PATH = "./tmp/ios"
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    #increment_build_number(xcodeproj: "Wallet.xcodeproj")
+    #build_app(workspace: "Wallet.xcworkspace", scheme: "Staging")
+    test
+    upload_to_testflight
+  end
+    lane :get_swift_coverage do
+    # Прогоняем тесты
+    all_unit_tests(
+      reports_dir: "./reports"
+    )
+    # Проверяем coverage
+    xcov(
+      workspace: WORKSPACE,
+      scheme: "Staging",
+      output_directory: './tmp/xcov_output',
+      html_report: true
+      )
+    #gym(scheme: "Staging", output_name: "app.ipa", clean: true, output_directory: TEMP_BUILD_FOLDER)
+  end
+  lane :all_unit_tests do |options|
+    run_unit_tests(
+      scheme: "Staging",
+      reports_dir: "#{options[:reports_dir]}_AllTests"
+      )
+    danger_report(
+        scheme_name: "Staging",
+      )
+  end
+  lane :run_unit_tests do |options|
+    scan(
+      workspace: WORKSPACE,
+      scheme: options[:scheme],
+      code_coverage: true,
+      output_directory: options[:reports_dir],
+      skip_build: true,
+      output_types: "html,junit"
+      )
+    #gym(scheme: "Staging", output_name: "app.ipa", clean: true, output_directory: TEMP_BUILD_FOLDER)
+  end
+    lane :danger_report do |options|
+      danger(fail_on_errors: true)
+  end
+end

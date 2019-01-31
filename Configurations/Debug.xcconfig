@@ -1,0 +1,37 @@
+//
+//  Debug.xcconfig
+//  Wallet
+//
+//  Created by Олег Лейзер on 31/01/2019.
+//  Copyright © 2019 Олег Лейзер. All rights reserved.
+//
+
+#include "iOS.xcconfig"
+#include "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.debug.xcconfig"
+
+// Product
+PRODUCT_BUNDLE_IDENTIFIER = kz.idev.wallet.debug
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+SUPPORTED_PLATFORMS = iphonesimulator iphoneos
+
+// Compiler
+ONLY_ACTIVE_ARCH = YES
+GCC_OPTIMIZATION_LEVEL = 0
+ENABLE_TESTABILITY = YES
+COPY_PHASE_STRIP = NO
+STRIP_INSTALLED_PRODUCT = NO
+ENABLE_NS_ASSERTIONS = YES
+DEAD_CODE_STRIPPING = NO
+PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES
+
+// Toggle flags
+DEBUG_GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1
+
+// CocoaPods integration
+
+GCC_PREPROCESSOR_DEFINITIONS = $(DEBUG_GCC_PREPROCESSOR_DEFINITIONS) $(PODS_GCC_PREPROCESSOR_DEFINITIONS)
+
+// Swift flags
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+

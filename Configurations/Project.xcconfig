@@ -1,0 +1,11 @@
+//
+//  Project.xcconfig
+//  Wallet
+//
+//  Created by Олег Лейзер on 31/01/2019.
+//  Copyright © 2019 Олег Лейзер. All rights reserved.
+//
+
+
+// Product
+PRODUCT_NAME = Wallet
