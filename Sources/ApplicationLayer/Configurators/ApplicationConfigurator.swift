@@ -22,6 +22,7 @@ class ApplicationConfigurator: ConfiguratorProtocol {
         //        Tracker.shared.overrideAgent = NullAgent()
         #endif
         SettingsBundleHelper.updatePreferanceVersionInfo()
+
 //
 //        switch Environment.scheme {
 //        case .staging:

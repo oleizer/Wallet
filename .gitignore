@@ -77,3 +77,9 @@ fastlane/test_output
 
 iOSInjectionProject/
 *.lock
+
+\.idea/
+
+reports_AllTests/
+
+tmp/

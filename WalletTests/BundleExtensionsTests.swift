@@ -12,6 +12,8 @@ import Nimble
 
 class BundleExtensionsTests: QuickSpec {
     override func spec() {
-        des
+        describe("Bundle") {
+            let bundle = Bundle.main            
+        }
     }
 }

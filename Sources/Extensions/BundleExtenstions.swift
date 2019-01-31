@@ -10,47 +10,39 @@ import Foundation
 
 public extension Bundle {
     /**
-     Функция для получения детальной версии приложения
-     - returns: Строку типа **String**
+    Получения детальной версии приложения
      - note: пример: 1.0.0 1001
      */
-    public func detailedVersionNumber() -> String? {
+    var detailedVersionNumber: String? {
         let mainBundle = Bundle.main
         guard  let version = mainBundle.infoDictionary?["CFBundleShortVersionString"], let build = mainBundle.infoDictionary?["CFBundleVersion"]  else {
             return nil
         }
-        let result = "\(version) (\(build))"
+        var result = "\(version) (\(build))"
+        #if DEBUG
+        result.append(" (DEV)")
+        #endif
         return result
     }
-    var version: String? {
-        guard var version = infoDictionary?["CFBundleShortVersionString"] as? String else {
+
+    /**
+     Получения версии приложения
+     - note: пример: 1.0.0
+     */
+
+    var shortVersionString: String? {
+        guard let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
             return nil
         }
-        #if DEBUG
-        version.append(" (DEV)")
-        #endif
+
         return version
     }
     /**
-     Функция для получения версии приложения
-     - returns: Строку типа **String** если включен дебаг то версия будет с препиской (DEV)
-     - note: пример: 1.0.0 (DEV)
+     Получения версии приложения
+     - note: пример: 1001
      */
-    public func shortVersionString() -> String? {
-        guard var version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
-            return nil
-        }
-        #if DEBUG
-        version.append(" (DEV)")
-        #endif
-        return version
-    }
-    /**
-     Функция для получения версии приложения
-     - returns: Строку типа **String** если включен дебаг то версия будет с препиской (DEV)
-     - note: пример: 1.0.0 (DEV)
-     */
-    public func bundleVersion() -> String? {
+
+    var bundleVersion: String? {
         guard let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
             return nil
         }
