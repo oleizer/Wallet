@@ -27,12 +27,21 @@ class ViewController: UIViewController {
 
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        startLoading()
+    }
     @objc private func changed() {
         print("Changed")
         updateDisplay()
+        startLoading()
     }
 
     private func updateDisplay() {
         segmented.selectedSegmentIndex = userDefault.integer(forKey: "WalletServerKey")
     }
+}
+
+extension ViewController: Loadable {
+
 }

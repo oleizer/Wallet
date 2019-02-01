@@ -13,6 +13,7 @@
 		A66363D621B9865000A2151C /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66363D421B9865000A2151C /* UITableViewExtensions.swift */; };
 		A66363D821B9866800A2151C /* UITableViewCellExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66363D721B9866800A2151C /* UITableViewCellExtensionTests.swift */; };
 		A66363DA21B9895000A2151C /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66363D921B9895000A2151C /* UITableViewExtensionsTests.swift */; };
+		A67B140A220454EB009F593E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1409220454EB009F593E /* Loadable.swift */; };
 		A6D764CE21B65E3C00666FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764CD21B65E3C00666FBE /* AppDelegate.swift */; };
 		A6D764D021B65E3C00666FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764CF21B65E3C00666FBE /* ViewController.swift */; };
 		A6D764D321B65E3C00666FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D764D121B65E3C00666FBE /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		A66363D421B9865000A2151C /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		A66363D721B9866800A2151C /* UITableViewCellExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensionTests.swift; sourceTree = "<group>"; };
 		A66363D921B9895000A2151C /* UITableViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionsTests.swift; sourceTree = "<group>"; };
+		A67B1409220454EB009F593E /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		A6D764CA21B65E3C00666FBE /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D764CD21B65E3C00666FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D764CF21B65E3C00666FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,14 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		A67B1408220454DA009F593E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A67B1409220454EB009F593E /* Loadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		A6D764C121B65E3C00666FBE = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 		A6D764CC21B65E3C00666FBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A67B1408220454DA009F593E /* Protocols */,
 				A6D7650C21B676AF00666FBE /* Constants */,
 				A6D764F621B66D7700666FBE /* Extensions */,
 				A6D764F321B66D5800666FBE /* Helpers */,
@@ -504,6 +515,7 @@
 				A6D764F821B66D8500666FBE /* BundleExtenstions.swift in Sources */,
 				A6D7650121B6741000666FBE /* AppearanceConfigurator.swift in Sources */,
 				A66363D621B9865000A2151C /* UITableViewExtensions.swift in Sources */,
+				A67B140A220454EB009F593E /* Loadable.swift in Sources */,
 				A6D7650321B6742600666FBE /* ThirdPartiesConfigurator.swift in Sources */,
 				A6D764D021B65E3C00666FBE /* ViewController.swift in Sources */,
 				A6D764F521B66D6000666FBE /* SettingsBundleHelper.swift in Sources */,
