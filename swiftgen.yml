@@ -9,3 +9,17 @@ xcassets:
   outputs:
     - templateName: swift4
       output: Sources/Constants/Images.swift
+colors:
+  inputs:
+    - Resources/Colors.json
+  outputs:
+    - templateName: swift4
+      output: Sources/Constants/Colors.swift
+ib:
+  inputs:
+    - .
+  outputs:
+    - templateName: scenes-swift4
+      output: Sources/Constants/Scenes.swift
+    - templateName: segues-swift4
+      output: Sources/Constants/Segues.swift

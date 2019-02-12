@@ -21,26 +21,6 @@ or alternatively using `brew cask install fastlane`
 fastlane ios beta
 ```
 Push a new beta build to TestFlight
-### ios get_swift_coverage
-```
-fastlane ios get_swift_coverage
-```
-
-### ios all_unit_tests
-```
-fastlane ios all_unit_tests
-```
-
-### ios run_unit_tests
-```
-fastlane ios run_unit_tests
-```
-
-### ios danger_report
-```
-fastlane ios danger_report
-```
-
 
 ----
 

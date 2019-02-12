@@ -9,15 +9,22 @@ end
 def analytics
   pod 'Crashlytics'
   pod 'Fabric'
+  pod 'Firebase'
 end
 
 def networking
   pod 'Moya'
   pod 'PromiseKit'
+  pod 'Socket.IO-Client-Swift', '~> 14.0.0'
 end
 
 def common_pods
   pod 'SnapKit'
+  pod 'CryptoSwift'
+  pod 'OpenSSL-Universal'
+
+  pod 'Reveal-SDK', :configurations => ['Debug']
+
   networking
 end
 

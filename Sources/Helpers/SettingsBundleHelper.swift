@@ -20,19 +20,18 @@ enum SettingsBundleHelper {
     static func checkReset() {
         if UserDefaults.standard.bool(forKey: SettingBundleKeys.AppResetKey) {
             UserDefaults.standard.set(false, forKey: SettingBundleKeys.AppResetKey)
-            _ = Bundle.main.bundleIdentifier
             guard let domain = Bundle.main.bundleIdentifier else { return }
             UserDefaults.standard.removePersistentDomain(forName: domain)
         }
-
     }
     static func updatePreferanceVersionInfo() {
         if let version = Bundle.main.shortVersionString, let build = Bundle.main.bundleVersion {
             UserDefaults.standard.set(version, forKey: SettingBundleKeys.AppVersionKey)
             UserDefaults.standard.set(build, forKey: SettingBundleKeys.BuildVersionKey)
-            UserDefaults.standard.set(build, forKey: SettingBundleKeys.BuildVersionKey)
-            UserDefaults.standard.set(1, forKey: SettingBundleKeys.AppServerKey)
-
+        //    UserDefaults.standard.set(1, forKey: SettingBundleKeys.AppServerKey)
         }
+
+        UserDefaults.standard.removeObject(forKey: SettingBundleKeys.AppServerKey)
+
     }
 }

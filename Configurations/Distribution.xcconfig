@@ -9,6 +9,6 @@
 #include "iOS.xcconfig"
 #include "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.distribution.xcconfig"
 // Product
-PRODUCT_BUNDLE_IDENTIFIER = kz.idev.wallet
+PRODUCT_BUNDLE_IDENTIFIER = kz.idev.mvowallet
 ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
 SUPPORTED_PLATFORMS = iphonesimulator iphoneos

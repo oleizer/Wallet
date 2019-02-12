@@ -1,4 +1,4 @@
-app_identifier("kz.idev.algatenge") # The bundle identifier of your app
+app_identifier("kz.idev.wallet.debug") # The bundle identifier of your app
 apple_id("oleizer@gmail.com") # Your Apple email address
 
 itc_team_id("1447962") # App Store Connect Team ID
