@@ -8,8 +8,18 @@
 
 import UIKit
 
+struct TitleStyle {
+    let titleColor: UIColor?
+    let highlightedTitleColor: UIColor?
+    let selectedTitleColor: UIColor?
+    let disabledTitleColor: UIColor?
+    let font: UIFont
+}
+
 class StyledButton<T: ButtonStyle>: UIButton {
     var didOverrideTitle = false
+    
+
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -67,14 +77,15 @@ class StyledButton<T: ButtonStyle>: UIButton {
         }
         
         if !didOverrideTitle {
+            let style = TitleStyle(titleColor: T.titleColor, highlightedTitleColor: T.highlightedTitleColor, selectedTitleColor: T.selectedTitleColor, disabledTitleColor: T.disabledTitleColor, font: T.font)
             titleLabel?.font = T.font
             if let defaultTitle = self.title(for: .normal) {
                 let states: [UIControl.State] = [.normal, .highlighted, .selected, .disabled]
                 for state in states {
                     let title = self.title(for: state) ?? defaultTitle
                     //let attr = NSAttributedString(button: title, style: nil, state: state, selected: isSelected, lineBreakMode: nil)
-                    //super.setAttributedTitle(NSAttributedString(button: title, style: T, state: state, selected: isSelected, alignment: .center, lineBreakMode: nil), for: state)
-                    super.setAttributedTitle(NSAttributedString(title, color: T.titleColor, font: T.font, alignment: .center, lineBreakMode: nil), for: state)
+                    super.setAttributedTitle(NSAttributedString(button: title, style: style, state: state, selected: isSelected, alignment: .center, lineBreakMode: nil), for: state)
+                    //super.setAttributedTitle(NSAttributedString(title, color: T.titleColor, font: T.font, alignment: .center, lineBreakMode: nil), for: state)
                 }
             }
         }
