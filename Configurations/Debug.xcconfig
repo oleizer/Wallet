@@ -10,8 +10,8 @@
 #include "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.debug.xcconfig"
 
 // Product
-PRODUCT_BUNDLE_IDENTIFIER = kz.idev.wallet.debug
-ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+PRODUCT_BUNDLE_IDENTIFIER = kz.idev.mvowallet.debug
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug
 SUPPORTED_PLATFORMS = iphonesimulator iphoneos
 
 // Compiler

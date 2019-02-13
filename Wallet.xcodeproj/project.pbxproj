@@ -8,11 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		80C74B4F42A5FC7259CF515B /* Pods_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F96122239EB1955F7DA79A6 /* Pods_Wallet.framework */; };
+		A61C9B422212DD1B00766AD8 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9B412212DD1B00766AD8 /* NSAttributedStringExtensions.swift */; };
+		A61C9B442212DD4600766AD8 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9B432212DD4600766AD8 /* UIImageExtensions.swift */; };
+		A61C9B462212DD5E00766AD8 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9B452212DD5E00766AD8 /* UIButtonExtensions.swift */; };
+		A61C9B492212ED6D00766AD8 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9B482212ED6D00766AD8 /* StyledButton.swift */; };
+		A61C9B4B2212ED9400766AD8 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9B4A2212ED9400766AD8 /* ButtonStyles.swift */; };
 		A63358B22203210600F4D48A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A63358B12203210600F4D48A /* README.md */; };
 		A66363D521B9865000A2151C /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66363D321B9865000A2151C /* UITableViewCellExtension.swift */; };
 		A66363D621B9865000A2151C /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66363D421B9865000A2151C /* UITableViewExtensions.swift */; };
 		A66363D821B9866800A2151C /* UITableViewCellExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66363D721B9866800A2151C /* UITableViewCellExtensionTests.swift */; };
 		A66363DA21B9895000A2151C /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66363D921B9895000A2151C /* UITableViewExtensionsTests.swift */; };
+		A67A576D22102FF000B4AC23 /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A576C22102FF000B4AC23 /* ImportViewController.swift */; };
+		A67A576F22102FF600B4AC23 /* Import.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A576E22102FF600B4AC23 /* Import.storyboard */; };
+		A67A57712210300700B4AC23 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57702210300700B4AC23 /* Storyboards.swift */; };
+		A67A57732210307600B4AC23 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = A67A57722210307600B4AC23 /* Colors.json */; };
+		A67A57752210308D00B4AC23 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57742210308D00B4AC23 /* Colors.swift */; };
+		A67A57772210310700B4AC23 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57762210310700B4AC23 /* Scenes.swift */; };
+		A67A57792210311A00B4AC23 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57782210311A00B4AC23 /* Segues.swift */; };
+		A67A577C221031DF00B4AC23 /* ImportAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A577B221031DF00B4AC23 /* ImportAssembly.swift */; };
+		A67A577E2210323000B4AC23 /* Assemblability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A577D2210323000B4AC23 /* Assemblability.swift */; };
+		A67A5781221036D500B4AC23 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5780221036D500B4AC23 /* PinViewController.swift */; };
+		A67A5783221036DB00B4AC23 /* Pin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A5782221036DB00B4AC23 /* Pin.storyboard */; };
+		A67A57862210896400B4AC23 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57852210896400B4AC23 /* RoundedButton.swift */; };
+		A67A578822114A4F00B4AC23 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A578722114A4F00B4AC23 /* WelcomeInteractor.swift */; };
+		A67A578A22117E7000B4AC23 /* WelcomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A578922117E7000B4AC23 /* WelcomeAssembly.swift */; };
+		A67A578C22118A3100B4AC23 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A578B22118A3100B4AC23 /* WelcomeView.swift */; };
+		A67A578E2211981B00B4AC23 /* WelcomeDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A578D2211981B00B4AC23 /* WelcomeDataFlow.swift */; };
+		A67A57932211A77500B4AC23 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57922211A77500B4AC23 /* WelcomeRouter.swift */; };
+		A67A57962211A8EF00B4AC23 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57952211A8EF00B4AC23 /* Either.swift */; };
+		A67A57982211A91300B4AC23 /* RResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57972211A91300B4AC23 /* RResult.swift */; };
+		A67A579A2211B08700B4AC23 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57992211B08700B4AC23 /* WalletManager.swift */; };
+		A67A579C2211B11D00B4AC23 /* MnemonicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A579B2211B11D00B4AC23 /* MnemonicService.swift */; };
+		A67A579F2211B5AC00B4AC23 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67A579E2211B5AC00B4AC23 /* Security.framework */; };
+		A67A57FA2211BC4C00B4AC23 /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A57F92211BC4C00B4AC23 /* English.swift */; };
+		A67B140A220454EB009F593E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1409220454EB009F593E /* Loadable.swift */; };
 		A6D764CE21B65E3C00666FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764CD21B65E3C00666FBE /* AppDelegate.swift */; };
 		A6D764D021B65E3C00666FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D764CF21B65E3C00666FBE /* ViewController.swift */; };
 		A6D764D321B65E3C00666FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D764D121B65E3C00666FBE /* Main.storyboard */; };
@@ -31,6 +60,13 @@
 		A6D7650B21B6768900666FBE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6D7650A21B6768900666FBE /* Localizable.strings */; };
 		A6D7650E21B676C400666FBE /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7650D21B676C400666FBE /* Localizable.swift */; };
 		A6D7651021B6774C00666FBE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7650F21B6774C00666FBE /* Images.swift */; };
+		A6DF65CE220F0A200020B977 /* ScreenLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DF65CD220F0A200020B977 /* ScreenLocker.swift */; };
+		A6DF65D0220F0BE50020B977 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DF65CF220F0BE50020B977 /* Application.swift */; };
+		A6DF65D2220F14D20020B977 /* QRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DF65D1220F14D20020B977 /* QRService.swift */; };
+		A6DF65D6220F2DD10020B977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6DF65D5220F2DD10020B977 /* GoogleService-Info.plist */; };
+		A6DF65DA220F36250020B977 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DF65D9220F36250020B977 /* WelcomeViewController.swift */; };
+		A6DF65DC220F362E0020B977 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DF65DB220F362E0020B977 /* Welcome.storyboard */; };
+		A6FBBA09220F399700D9A0BE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBBA08220F399700D9A0BE /* Helpers.swift */; };
 		F98DF996A9E3C890DD673443 /* Pods_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612800D0019940F7F653F881 /* Pods_WalletTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +85,11 @@
 		4F96122239EB1955F7DA79A6 /* Pods_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		612800D0019940F7F653F881 /* Pods_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8684CA411F538E9DC1BBB4B8 /* Pods-WalletTests.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletTests.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-WalletTests/Pods-WalletTests.distribution.xcconfig"; sourceTree = "<group>"; };
+		A61C9B412212DD1B00766AD8 /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
+		A61C9B432212DD4600766AD8 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		A61C9B452212DD5E00766AD8 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		A61C9B482212ED6D00766AD8 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
+		A61C9B4A2212ED9400766AD8 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		A63358A522031DF000F4D48A /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		A63358A622031DF800F4D48A /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
 		A63358A722031E0400F4D48A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -59,6 +100,31 @@
 		A66363D421B9865000A2151C /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		A66363D721B9866800A2151C /* UITableViewCellExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensionTests.swift; sourceTree = "<group>"; };
 		A66363D921B9895000A2151C /* UITableViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionsTests.swift; sourceTree = "<group>"; };
+		A67A576C22102FF000B4AC23 /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
+		A67A576E22102FF600B4AC23 /* Import.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Import.storyboard; sourceTree = "<group>"; };
+		A67A57702210300700B4AC23 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		A67A57722210307600B4AC23 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
+		A67A57742210308D00B4AC23 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A67A57762210310700B4AC23 /* Scenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
+		A67A57782210311A00B4AC23 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		A67A577B221031DF00B4AC23 /* ImportAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportAssembly.swift; sourceTree = "<group>"; };
+		A67A577D2210323000B4AC23 /* Assemblability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assemblability.swift; sourceTree = "<group>"; };
+		A67A5780221036D500B4AC23 /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
+		A67A5782221036DB00B4AC23 /* Pin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pin.storyboard; sourceTree = "<group>"; };
+		A67A57852210896400B4AC23 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A67A578722114A4F00B4AC23 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		A67A578922117E7000B4AC23 /* WelcomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAssembly.swift; sourceTree = "<group>"; };
+		A67A578B22118A3100B4AC23 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A67A578D2211981B00B4AC23 /* WelcomeDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeDataFlow.swift; sourceTree = "<group>"; };
+		A67A57922211A77500B4AC23 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		A67A57952211A8EF00B4AC23 /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		A67A57972211A91300B4AC23 /* RResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RResult.swift; sourceTree = "<group>"; };
+		A67A57992211B08700B4AC23 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
+		A67A579B2211B11D00B4AC23 /* MnemonicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicService.swift; sourceTree = "<group>"; };
+		A67A579E2211B5AC00B4AC23 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A67A57F32211B7B700B4AC23 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		A67A57F92211BC4C00B4AC23 /* English.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
+		A67B1409220454EB009F593E /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		A6D764CA21B65E3C00666FBE /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D764CD21B65E3C00666FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D764CF21B65E3C00666FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +147,13 @@
 		A6D7650A21B6768900666FBE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A6D7650D21B676C400666FBE /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		A6D7650F21B6774C00666FBE /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		A6DF65CD220F0A200020B977 /* ScreenLocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLocker.swift; sourceTree = "<group>"; };
+		A6DF65CF220F0BE50020B977 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		A6DF65D1220F14D20020B977 /* QRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRService.swift; sourceTree = "<group>"; };
+		A6DF65D5220F2DD10020B977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6DF65D9220F36250020B977 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		A6DF65DB220F362E0020B977 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		A6FBBA08220F399700D9A0BE /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		C3D1FE519429B8E6AE4DFE30 /* Pods-WalletTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-WalletTests/Pods-WalletTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67A579F2211B5AC00B4AC23 /* Security.framework in Frameworks */,
 				80C74B4F42A5FC7259CF515B /* Pods_Wallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +181,7 @@
 		06C1D767B36F397D0D202EA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A67A579E2211B5AC00B4AC23 /* Security.framework */,
 				4F96122239EB1955F7DA79A6 /* Pods_Wallet.framework */,
 				612800D0019940F7F653F881 /* Pods_WalletTests.framework */,
 			);
@@ -123,6 +198,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A61C9B472212ED6300766AD8 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A61C9B482212ED6D00766AD8 /* StyledButton.swift */,
+				A61C9B4A2212ED9400766AD8 /* ButtonStyles.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		A63358A422031D4F00F4D48A /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +217,78 @@
 				A63358A922031E2300F4D48A /* AdHoc.xcconfig */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		A67A576B22102FE100B4AC23 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				A67A576C22102FF000B4AC23 /* ImportViewController.swift */,
+				A67A576E22102FF600B4AC23 /* Import.storyboard */,
+				A67A577B221031DF00B4AC23 /* ImportAssembly.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		A67A577F221036C800B4AC23 /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				A67A5780221036D500B4AC23 /* PinViewController.swift */,
+				A67A5782221036DB00B4AC23 /* Pin.storyboard */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
+		A67A57842210893F00B4AC23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A61C9B472212ED6300766AD8 /* Button */,
+				A67A57852210896400B4AC23 /* RoundedButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A67A578F22119BA800B4AC23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6DF65DB220F362E0020B977 /* Welcome.storyboard */,
+				A67A578B22118A3100B4AC23 /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A67A57942211A8DB00B4AC23 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A67A57F32211B7B700B4AC23 /* Bridge-Header.h */,
+				A67A57952211A8EF00B4AC23 /* Either.swift */,
+				A67A57972211A91300B4AC23 /* RResult.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A67A579D2211B3A300B4AC23 /* Mnemonic */ = {
+			isa = PBXGroup;
+			children = (
+				A67A579B2211B11D00B4AC23 /* MnemonicService.swift */,
+				A67A57F92211BC4C00B4AC23 /* English.swift */,
+			);
+			path = Mnemonic;
+			sourceTree = "<group>";
+		};
+		A67A57A02211B6AA00B4AC23 /* ThrirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThrirdParty;
+			sourceTree = "<group>";
+		};
+		A67B1408220454DA009F593E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A67B1409220454EB009F593E /* Loadable.swift */,
+				A67A577D2210323000B4AC23 /* Assemblability.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A6D764C121B65E3C00666FBE = {
@@ -162,6 +318,11 @@
 		A6D764CC21B65E3C00666FBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A67A57A02211B6AA00B4AC23 /* ThrirdParty */,
+				A67A57942211A8DB00B4AC23 /* Core */,
+				A67A57842210893F00B4AC23 /* View */,
+				A6DF65CC220F06490020B977 /* Features */,
+				A67B1408220454DA009F593E /* Protocols */,
 				A6D7650C21B676AF00666FBE /* Constants */,
 				A6D764F621B66D7700666FBE /* Extensions */,
 				A6D764F321B66D5800666FBE /* Helpers */,
@@ -175,6 +336,7 @@
 		A6D764DF21B65E4800666FBE /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				A6DF65D5220F2DD10020B977 /* GoogleService-Info.plist */,
 				A6D764D921B65E3D00666FBE /* Info.plist */,
 			);
 			path = Support;
@@ -188,6 +350,7 @@
 				A6D764FB21B6724300666FBE /* Colors.xcassets */,
 				A6D7650821B6762100666FBE /* Settings.bundle */,
 				A6D7650A21B6768900666FBE /* Localizable.strings */,
+				A67A57722210307600B4AC23 /* Colors.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -216,6 +379,11 @@
 		A6D764F121B66C5F00666FBE /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A67A579D2211B3A300B4AC23 /* Mnemonic */,
+				A6DF65D7220F308E0020B977 /* Network */,
+				A6DF65CD220F0A200020B977 /* ScreenLocker.swift */,
+				A6DF65D1220F14D20020B977 /* QRService.swift */,
+				A67A57992211B08700B4AC23 /* WalletManager.swift */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -225,6 +393,8 @@
 			children = (
 				A6D764FD21B673E900666FBE /* Configurators */,
 				A6D764CD21B65E3C00666FBE /* AppDelegate.swift */,
+				A6DF65CF220F0BE50020B977 /* Application.swift */,
+				A6FBBA08220F399700D9A0BE /* Helpers.swift */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -243,6 +413,9 @@
 				A66363D321B9865000A2151C /* UITableViewCellExtension.swift */,
 				A66363D421B9865000A2151C /* UITableViewExtensions.swift */,
 				A6D764F721B66D8500666FBE /* BundleExtenstions.swift */,
+				A61C9B412212DD1B00766AD8 /* NSAttributedStringExtensions.swift */,
+				A61C9B432212DD4600766AD8 /* UIImageExtensions.swift */,
+				A61C9B452212DD5E00766AD8 /* UIButtonExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,8 +436,42 @@
 			children = (
 				A6D7650D21B676C400666FBE /* Localizable.swift */,
 				A6D7650F21B6774C00666FBE /* Images.swift */,
+				A67A57702210300700B4AC23 /* Storyboards.swift */,
+				A67A57742210308D00B4AC23 /* Colors.swift */,
+				A67A57762210310700B4AC23 /* Scenes.swift */,
+				A67A57782210311A00B4AC23 /* Segues.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		A6DF65CC220F06490020B977 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A67A577F221036C800B4AC23 /* Pin */,
+				A67A576B22102FE100B4AC23 /* Import */,
+				A6DF65D8220F36080020B977 /* Welcome */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A6DF65D7220F308E0020B977 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A6DF65D8220F36080020B977 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				A67A578F22119BA800B4AC23 /* View */,
+				A67A578D2211981B00B4AC23 /* WelcomeDataFlow.swift */,
+				A67A578922117E7000B4AC23 /* WelcomeAssembly.swift */,
+				A67A57922211A77500B4AC23 /* WelcomeRouter.swift */,
+				A67A578722114A4F00B4AC23 /* WelcomeInteractor.swift */,
+				A6DF65D9220F36250020B977 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,10 +482,10 @@
 			buildConfigurationList = A6D764DC21B65E3D00666FBE /* Build configuration list for PBXNativeTarget "Wallet" */;
 			buildPhases = (
 				4B1FB7CE4D84EFB7CA745BC9 /* [CP] Check Pods Manifest.lock */,
+				A67A577A2210315E00B4AC23 /* Run SwiftGen */,
 				A6D764C621B65E3C00666FBE /* Sources */,
 				A6D764C721B65E3C00666FBE /* Frameworks */,
 				A6D764C821B65E3C00666FBE /* Resources */,
-				A6D764F021B6656200666FBE /* Run SwiftLint */,
 				C07994ADAAA891B620DD195A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -357,9 +564,14 @@
 				A6D7650B21B6768900666FBE /* Localizable.strings in Resources */,
 				A6D764FC21B6724300666FBE /* Colors.xcassets in Resources */,
 				A63358B22203210600F4D48A /* README.md in Resources */,
+				A67A5783221036DB00B4AC23 /* Pin.storyboard in Resources */,
 				A6D7650921B6762100666FBE /* Settings.bundle in Resources */,
+				A67A57732210307600B4AC23 /* Colors.json in Resources */,
+				A6DF65DC220F362E0020B977 /* Welcome.storyboard in Resources */,
 				A6D764D521B65E3D00666FBE /* Assets.xcassets in Resources */,
+				A67A576F22102FF600B4AC23 /* Import.storyboard in Resources */,
 				A6D764D321B65E3C00666FBE /* Main.storyboard in Resources */,
+				A6DF65D6220F2DD10020B977 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +635,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletTests/Pods-WalletTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A6D764F021B6656200666FBE /* Run SwiftLint */ = {
+		A67A577A2210315E00B4AC23 /* Run SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -432,14 +644,14 @@
 			);
 			inputPaths = (
 			);
-			name = "Run SwiftLint";
+			name = "Run SwiftGen";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nbundle exec swiftlint autocorrect --quiet\nbundle exec swiftlint lint --reporter \"xcode\" --quiet\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "swiftgen\n";
 		};
 		C07994ADAAA891B620DD195A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -451,20 +663,32 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Wallet/Pods-Wallet-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-20/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -500,17 +724,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67A578A22117E7000B4AC23 /* WelcomeAssembly.swift in Sources */,
+				A6DF65D0220F0BE50020B977 /* Application.swift in Sources */,
 				A6D764FF21B6740200666FBE /* ConfiguratorProtocol.swift in Sources */,
+				A67A57772210310700B4AC23 /* Scenes.swift in Sources */,
 				A6D764F821B66D8500666FBE /* BundleExtenstions.swift in Sources */,
 				A6D7650121B6741000666FBE /* AppearanceConfigurator.swift in Sources */,
+				A67A579A2211B08700B4AC23 /* WalletManager.swift in Sources */,
 				A66363D621B9865000A2151C /* UITableViewExtensions.swift in Sources */,
+				A61C9B422212DD1B00766AD8 /* NSAttributedStringExtensions.swift in Sources */,
+				A67A576D22102FF000B4AC23 /* ImportViewController.swift in Sources */,
+				A6DF65DA220F36250020B977 /* WelcomeViewController.swift in Sources */,
+				A67B140A220454EB009F593E /* Loadable.swift in Sources */,
+				A67A57962211A8EF00B4AC23 /* Either.swift in Sources */,
+				A67A578822114A4F00B4AC23 /* WelcomeInteractor.swift in Sources */,
+				A67A578E2211981B00B4AC23 /* WelcomeDataFlow.swift in Sources */,
 				A6D7650321B6742600666FBE /* ThirdPartiesConfigurator.swift in Sources */,
+				A67A57982211A91300B4AC23 /* RResult.swift in Sources */,
 				A6D764D021B65E3C00666FBE /* ViewController.swift in Sources */,
+				A67A57752210308D00B4AC23 /* Colors.swift in Sources */,
+				A6DF65CE220F0A200020B977 /* ScreenLocker.swift in Sources */,
+				A67A57862210896400B4AC23 /* RoundedButton.swift in Sources */,
 				A6D764F521B66D6000666FBE /* SettingsBundleHelper.swift in Sources */,
+				A67A57932211A77500B4AC23 /* WelcomeRouter.swift in Sources */,
 				A6D764CE21B65E3C00666FBE /* AppDelegate.swift in Sources */,
+				A67A579C2211B11D00B4AC23 /* MnemonicService.swift in Sources */,
+				A61C9B4B2212ED9400766AD8 /* ButtonStyles.swift in Sources */,
 				A6D7651021B6774C00666FBE /* Images.swift in Sources */,
+				A6FBBA09220F399700D9A0BE /* Helpers.swift in Sources */,
+				A61C9B442212DD4600766AD8 /* UIImageExtensions.swift in Sources */,
 				A6D7650E21B676C400666FBE /* Localizable.swift in Sources */,
+				A67A577C221031DF00B4AC23 /* ImportAssembly.swift in Sources */,
+				A67A57792210311A00B4AC23 /* Segues.swift in Sources */,
+				A67A57712210300700B4AC23 /* Storyboards.swift in Sources */,
 				A6D7650521B6743800666FBE /* ApplicationConfigurator.swift in Sources */,
+				A67A578C22118A3100B4AC23 /* WelcomeView.swift in Sources */,
+				A6DF65D2220F14D20020B977 /* QRService.swift in Sources */,
+				A67A577E2210323000B4AC23 /* Assemblability.swift in Sources */,
+				A67A57FA2211BC4C00B4AC23 /* English.swift in Sources */,
+				A61C9B492212ED6D00766AD8 /* StyledButton.swift in Sources */,
+				A67A5781221036D500B4AC23 /* PinViewController.swift in Sources */,
+				A61C9B462212DD5E00766AD8 /* UIButtonExtensions.swift in Sources */,
 				A66363D521B9865000A2151C /* UITableViewCellExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,18 +870,33 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A63358A822031E1700F4D48A /* Distribution.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${CURRENT_PROJECT_VERSION}";
 				DEVELOPMENT_TEAM = AC6F95FHB4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${SRCROOT}/Sources/Core/ThridParty/Crypto/openssl/include\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/Sources/ThrirdParty/Crypto/openssl/lib",
+				);
 				PREFIX_DISPLAY_NAME = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_DISPLAY_NAME = "MVO Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Sources/Core/Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -721,18 +990,33 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A63358A922031E2300F4D48A /* AdHoc.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${CURRENT_PROJECT_VERSION}";
 				DEVELOPMENT_TEAM = AC6F95FHB4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${SRCROOT}/Sources/Core/ThridParty/Crypto/openssl/include\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/Sources/ThrirdParty/Crypto/openssl/lib",
+				);
 				PREFIX_DISPLAY_NAME = "● ";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_DISPLAY_NAME = "MVO Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Sources/Core/Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -826,18 +1110,33 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A63358A722031E0400F4D48A /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${CURRENT_PROJECT_VERSION}";
 				DEVELOPMENT_TEAM = AC6F95FHB4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${SRCROOT}/Sources/Core/ThridParty/Crypto/openssl/include\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/Sources/ThrirdParty/Crypto/openssl/lib",
+				);
 				PREFIX_DISPLAY_NAME = "⚙️ ";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_DISPLAY_NAME = "MVO Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Sources/Core/Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";

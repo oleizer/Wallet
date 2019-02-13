@@ -8,3 +8,16 @@
 "Common.Ok" = "Ок";
 "Common.Cancel" = "Отмена";
 "Common.Logout" = "Выход";
+
+"Welcome.Labels.title" = "MVO Wallet";
+"Welcome.Labels.subtitle" = "Начните с создания нового кошелька или восстановления существующего";
+
+"Welcome.Buttons.new" = "Создать новый кошелёк";
+"Welcome.Buttons.import" = "Восстановить с паролем";
+
+"Welcome.Import.title" = "Восстановить";
+"Welcome.Import.subtitle" = "Восстановить с помощью";
+"Welcome.Import.private" = "Приватного ключа";
+"Welcome.Import.json" = "JSON ключа";
+"Welcome.Import.mnemonic" = "Фразы восстановления";
+
