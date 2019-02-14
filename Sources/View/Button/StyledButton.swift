@@ -17,9 +17,20 @@ struct TitleStyle {
 }
 
 class StyledButton<T: ButtonStyle>: UIButton {
-    var didOverrideTitle = false
+    private var didOverrideTitle = false
+    private var previousState: UIControl.State = .focused
+    override var isEnabled: Bool{
+        didSet { updateStyle() }
+    }
+    override var isSelected: Bool {
+        didSet { updateStyle() }
+    }
+    override var isHighlighted: Bool {
+        didSet { updateStyle() }
+    }
     
-
+    
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,24 +50,21 @@ class StyledButton<T: ButtonStyle>: UIButton {
         super.layoutSubviews()
         layer.masksToBounds = true
         layer.cornerRadius = T.corner.size(in: frame)
+        previousState = state
+
     }
+
     
-    
-    override var isEnabled: Bool{
-        didSet { updateStyle() }
-    }
-    override var isSelected: Bool {
-        didSet { updateStyle() }
-    }
-    override var isHighlighted: Bool {
-        didSet { updateStyle() }
-    }
+
     private func updateStyle() {
+        if previousState == state { return }
         let layerBorder: UIColor?
         if !isEnabled {
             backgroundColor = T.disabledBackgroundColor ?? T.backgroundColor
             layerBorder = T.disabledBorderColor
         } else if isHighlighted {
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
             backgroundColor = T.highlightedBackgroundColor ?? T.backgroundColor
             layerBorder = T.highlightedBorderColor ?? T.borderColor
         } else if isSelected {

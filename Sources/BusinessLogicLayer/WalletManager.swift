@@ -8,8 +8,10 @@
 
 import Foundation
 
+
 protocol WalletManagerProtocol {
     func createWallet(passphase: String) throws
+    func importWallet(with mnemonic: [String], passphrase: String) throws
 }
 
 class Walletmanager: WalletManagerProtocol {
@@ -19,7 +21,11 @@ class Walletmanager: WalletManagerProtocol {
     }
     func createWallet(passphase: String) throws {
         let mnemonic = mnemonicService.create(strenght: .normal, language: .english)
-        
-        print(mnemonic)
+        try importWallet(with: mnemonic, passphrase: passphase)
     }
+    func importWallet(with mnemonic: [String], passphrase: String) throws {
+        let seed = try mnemonicService.createSeed(with: mnemonic, passphrase: passphrase)
+        print(seed)
+    }
+    
 }

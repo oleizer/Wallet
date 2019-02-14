@@ -15,6 +15,12 @@ colors:
   outputs:
     - templateName: swift4
       output: Sources/Constants/Colors.swift
+fonts:
+  inputs:
+    - Resources/Fonts
+  outputs:
+    - templateName: swift4
+      output: Sources/Constants/Fonts.swift
 ib:
   inputs:
     - .
