@@ -36,13 +36,6 @@ internal enum StoryboardScene {
 
     internal static let pinViewController = SceneType<Wallet.PinViewController>(storyboard: Pin.self, identifier: "PinViewController")
   }
-  internal enum Welcome: StoryboardType {
-    internal static let storyboardName = "Welcome"
-
-    internal static let initialScene = InitialSceneType<Wallet.WelcomeViewController>(storyboard: Welcome.self)
-
-    internal static let welcomeViewController = SceneType<Wallet.WelcomeViewController>(storyboard: Welcome.self, identifier: "WelcomeViewController")
-  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

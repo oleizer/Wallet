@@ -64,7 +64,7 @@ enum BlueClearButtonStyle: ButtonStyle {
     static var highlightedBorderColor: UIColor? = nil
     static var disabledBorderColor: UIColor? = ColorName.grayMedium.color
     
-    static var font: UIFont = UIFont.systemFont(ofSize: 18)
+    static var font: UIFont = .defaultFont()
     
     static var corner: Corner = .pill
 }
@@ -87,7 +87,7 @@ enum BlueButtonStyle: ButtonStyle {
     static var highlightedBorderColor: UIColor? = nil
     static var disabledBorderColor: UIColor? = nil
     
-    static var font: UIFont = UIFont.systemFont(ofSize: 18)
+    static var font: UIFont = .defaultFont()
     
     static var corner: Corner = .pill
 }

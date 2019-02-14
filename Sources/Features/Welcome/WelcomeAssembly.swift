@@ -18,7 +18,6 @@ class WelcomeAssembly: Assemblability {
     func assembly() -> UIViewController {
         let interactor = WelcomeInteractor()
         let router = WelcomeRouter()
-//        let viewController = StoryboardScene.Welcome.welcomeViewController.instantiate()
         let viewController = WelcomeViewController(interactor: interactor, router: router)
 
         return viewController
